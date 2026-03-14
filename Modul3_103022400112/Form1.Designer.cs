@@ -32,7 +32,7 @@
             cbSuhuAwal = new ComboBox();
             nilaiAwal = new Label();
             tfSuhuAwal = new TextBox();
-            textBox1 = new TextBox();
+            tfSuhuAkhir = new TextBox();
             nilaiAkhir = new Label();
             btnConvert = new Button();
             cbSuhuAkhir = new ComboBox();
@@ -73,13 +73,13 @@
             tfSuhuAwal.Size = new Size(150, 31);
             tfSuhuAwal.TabIndex = 3;
             // 
-            // textBox1
+            // tfSuhuAkhir
             // 
-            textBox1.Location = new Point(316, 176);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 4;
+            tfSuhuAkhir.Location = new Point(316, 176);
+            tfSuhuAkhir.Name = "tfSuhuAkhir";
+            tfSuhuAkhir.ReadOnly = true;
+            tfSuhuAkhir.Size = new Size(150, 31);
+            tfSuhuAkhir.TabIndex = 4;
             // 
             // nilaiAkhir
             // 
@@ -98,6 +98,7 @@
             btnConvert.TabIndex = 6;
             btnConvert.Text = "Convert";
             btnConvert.UseVisualStyleBackColor = true;
+            btnConvert.Click += btnConvert_Click;
             // 
             // cbSuhuAkhir
             // 
@@ -126,7 +127,7 @@
             Controls.Add(cbSuhuAkhir);
             Controls.Add(btnConvert);
             Controls.Add(nilaiAkhir);
-            Controls.Add(textBox1);
+            Controls.Add(tfSuhuAkhir);
             Controls.Add(tfSuhuAwal);
             Controls.Add(nilaiAwal);
             Controls.Add(cbSuhuAwal);
@@ -143,7 +144,7 @@
         private ComboBox cbSuhuAwal;
         private Label nilaiAwal;
         private TextBox tfSuhuAwal;
-        private TextBox textBox1;
+        private TextBox tfSuhuAkhir;
         private Label nilaiAkhir;
         private Button btnConvert;
         private ComboBox cbSuhuAkhir;
